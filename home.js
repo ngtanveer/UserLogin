@@ -63,7 +63,7 @@ function userRegister() {
     localStorage.setItem('users', JSON.stringify([...getUserData, newUserData]))
 
     console.log("data", JSON.parse(localStorage.getItem("users")))
-    window.location.href = "home.html";
+    window.location.href = "index.html";
     // document.write("you have successfully registered")
 }
 
