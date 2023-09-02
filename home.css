@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(45deg,rgb(120, 120, 240),rgb(161, 45, 161)); */
+    background: linear-gradient(45deg,rgb(75, 75, 245),rgb(108, 108, 226),violet,rgb(255, 116, 255));
+    
+
+}
+#main{
+    height:656px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#form{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: -3px 3px 14px rgb(219, 200, 200);
+    
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: black;
+    padding: 3px 18px;
+    font-weight: bold;
+
+}
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+
+/*stylying button*/
+#loginButton{
+    height: 30px;
+    width: 70px;
+    background-color: whitesmoke;
+    outline:none;
+    border:none;
+    border-radius: 20px;
+}
+#loginButton:hover{
+    background: #a5a2a2;
+}
+
+#btn a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+}
+
+/* styling reg para*/
+#form{
+    position: relative;
+}
+#para{
+    height: 20px;
+    width: 80px;
+    /* border: 2px solid black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    right: 51px;
+}
+#para a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* styling icon */
+#form{
+    position: relative;
+}
+.fa-lock{
+    position: absolute;
+    top: 127px;
+    left: 42px;
+    font-size: 14px;
+    color: white;
+
+
+}
+.fa-user{
+    position: absolute;
+    top: 89px;
+    left: 42px;
+    font-size: 12px;
+    color: white;
+}
+
+

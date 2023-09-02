@@ -1,0 +1,41 @@
+                let Arrs = []
+                const addArr = (ev) => {
+                ev.preventDefault();
+                let Arr = {
+                    name : document.getElementById('names'),
+                    number : document.getElementById('num'),
+                    password : document.getElementById('pass')
+                }
+                Arrs.push(Arr);
+                document.forms[0].reset();
+                
+                console.log('Added', {Arrs});
+
+                }
+
+                document.addEventListener('DOMContentLoaded',()=>{
+                document.getElementById('reg-btn').document.getElementById('click',addArr)
+                })
+
+
+    function userRegister() {
+    const name = document.getElementById("name").value
+    const password = document.getElementById("pass").value
+    const phone = document.getElementById("num").value
+
+    const newUserData = {
+        name,
+        password,
+        phone
+    }
+
+    if (!localStorage.getItem("users")) {
+        localStorage.setItem("users", JSON.stringify([]))
+    }
+
+    const getUserData = JSON.parse(localStorage.getItem('users'))
+    localStorage.setItem('users', JSON.stringify([...getUserData, newUserData]))
+
+    console.log("data", JSON.parse(localStorage.getItem("users")))
+    window.location.href = "homepage.html"
+}

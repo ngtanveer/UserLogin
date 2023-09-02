@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(45deg,rgb(120, 120, 240),rgb(161, 45, 161)); */
+    background: linear-gradient(45deg,rgb(75, 75, 245),rgb(108, 108, 226),violet,rgb(255, 116, 255));
+    
+
+}
+#main-reg{
+    height:656px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#reg-form{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: -3px 3px 14px rgb(219, 200, 200);
+    position: relative;
+    
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: black;
+    padding: 3px 18px;
+    font-weight: bold;
+
+}
+
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+#input-div{
+    position: absolute;
+    top: 50px;
+    height: 140px;
+    width: 190px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/*stylying button*/
+#registerButton{
+    height: 30px;
+    width: 187px;
+    background-color: whitesmoke;
+    outline:none;
+    border:none;
+    border-radius: 20px;
+}
+#reg-form{
+    position: relative;
+}
+#reg-para{
+    height: 20px;
+    width: 80px;
+    /* border: 2px solid black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 209px;
+    right: 106px;
+}
+#reg-para a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+#reg-btn:hover{
+    background-color: #a5a2a2;
+}
+
+input{
+    position: relative;
+}
+.fa-lock{
+    position: absolute;
+    top:104px;
+    right: 190px;
+    font-size: 14px;
+    color: white;
+
+
+}
+.fa-mobile-screen{
+    position: absolute;
+    top:63px;
+    right: 190px;
+    font-size: 14px;
+    color: white;
+
+
+}
+.fa-user{
+    position: absolute;
+    top:25px;
+    right: 190px;
+    font-size: 12px;
+    color: white;
+}
+
+
